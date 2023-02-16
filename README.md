@@ -13,3 +13,5 @@ The timestamp returned by the NTP server is in the format of the number of secon
 If the time difference is positive, it means that the local time is behind the NTP server's time, and the program updates the local time by setting the system clock using the settimeofday function. If the time difference is negative, it means that the local time is ahead of the NTP server's time, and the program does not update the local time.
 
 The program then outputs the NTP server's time, the local time, and the time difference between them to the console. If the local time was updated, the program outputs the new local time as well.
+
+This project was developed in Ubuntu 20.04 operating system. It may not work on another operating system. To run the application, compile the NTP.cpp file and after the compilation is finished, you can run it by typing "./NTP <NTP server IP address or domain name>" on the terminal screen.
